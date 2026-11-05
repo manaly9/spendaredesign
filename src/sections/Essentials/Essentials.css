@@ -1,0 +1,51 @@
+.essentials { position: relative; isolation: isolate; height: 100svh; min-height: 420px; overflow: clip; background: #fff; color: #fff; font-family: 'Satoshi', 'Avenir Next', 'Segoe UI', Arial, sans-serif; }
+.essentials-type { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; white-space: nowrap; font-weight: 700; font-size: clamp(80px, 10.5vw, 180px); letter-spacing: -0.055em; line-height: 1; color: #000; pointer-events: none; }
+.essentials-position { position: absolute; inset: 0; display: grid; place-items: center; }
+.essentials-viewport { --reveal-width: 34%; --reveal-height: 52%; width: min(68vw, calc(76svh * 1.3333), 1100px); aspect-ratio: 4 / 3; clip-path: inset(calc((100% - var(--reveal-height)) / 2) calc((100% - var(--reveal-width)) / 2) round 8px); overflow: hidden; border-radius: 8px; background: #111; }
+.essentials-marquee { display: flex; width: max-content; flex: none; will-change: transform; }
+.essentials-marquee span { flex: none; padding-right: 0.4em; }
+.essentials-track { position: relative; display: flex; width: 100%; height: 100%; will-change: transform; }
+.essentials-card { position: relative; flex: 0 0 100%; width: 100%; height: 100%; overflow: hidden; background: #111; }
+.essentials-card video { display: block; width: 100%; height: 100%; object-fit: contain; }
+.essentials-card::after { content: ''; position: absolute; inset: 40% 0 0; background: linear-gradient(transparent, rgb(0 0 0 / 82%)); pointer-events: none; }
+.essentials-caption { position: absolute; z-index: 1; bottom: 7%; left: 8%; right: 8%; opacity: 0; visibility: hidden; }
+.essentials-caption h2 { margin: 0 0 12px; font-size: clamp(19px, 1.55vw, 26px); font-weight: 700; line-height: 1.2; letter-spacing: -0.03em; }
+.essentials-caption p { margin: 0; font-size: clamp(14px, 1.3vw, 20px); line-height: 1.5; color: #b7b7b7; }
+.essentials-decoration { position: absolute; inset: 0; pointer-events: none; }
+.essentials-icon { position: absolute; width: clamp(30px, 4vw, 66px); height: clamp(30px, 4vw, 66px); object-fit: contain; opacity: 0; visibility: hidden; }
+.essentials-icon-0 { left: 7%; top: 24%; rotate: -16deg; }
+.essentials-icon-1 { left: 37%; top: 3%; rotate: 12deg; }
+.essentials-icon-2 { right: 8%; top: 9%; rotate: -12deg; }
+.essentials-icon-3 { left: 10%; bottom: 9%; rotate: 12deg; }
+.essentials-icon-4 { right: 7%; bottom: 20%; rotate: 16deg; }
+.essentials-icon-5 { right: 35%; bottom: 2%; rotate: -10deg; }
+.essentials-play { display: none; position: absolute; z-index: 2; top: 12px; right: 12px; border: 1px solid #777; border-radius: 24px; padding: 10px 16px; background: #111; color: #fff; cursor: pointer; }
+.essentials-card[data-play-blocked] .essentials-play { display: block; }
+@media (max-width: 900px) {
+  .essentials-viewport { width: min(82vw, calc(76svh * 1.3333)); }
+  .essentials-icon-0, .essentials-icon-4 { display: none; }
+}
+@media (max-width: 600px) {
+  .essentials-viewport { width: 90vw; aspect-ratio: 4 / 5; --reveal-width: 58%; --reveal-height: 52%; }
+  .essentials-type { font-size: 76px; }
+  .essentials-caption { left: 7%; right: 7%; bottom: 6%; }
+  .essentials-caption h2 { font-size: 21px; margin-bottom: 8px; }
+  .essentials-caption p { font-size: 14px; }
+  .essentials-icon-1 { left: 12%; top: 9%; }
+  .essentials-icon-2 { right: 12%; top: 12%; }
+  .essentials-icon-3 { left: 12%; bottom: 10%; }
+  .essentials-icon-5 { right: 12%; bottom: 7%; }
+}
+@media (max-height: 600px) {
+  .essentials-viewport { width: min(80vw, calc(76svh * 1.3333)); aspect-ratio: 4 / 3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .essentials { height: auto; min-height: 0; padding: 48px 0; background: #000; }
+  .essentials-type, .essentials-decoration { display: none; }
+  .essentials-position { position: relative; display: block; }
+  .essentials-viewport { width: min(90%, 1100px); margin: auto; aspect-ratio: auto; clip-path: none; overflow: visible; background: transparent; }
+  .essentials-track { display: grid; height: auto; gap: 24px; }
+  .essentials-card { position: relative; top: auto; height: auto; aspect-ratio: 4 / 3; border-radius: 8px; }
+  .essentials-caption { opacity: 1; visibility: visible; }
+}
+

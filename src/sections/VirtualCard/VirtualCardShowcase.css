@@ -1,0 +1,81 @@
+.spenda-card-face { position: relative; aspect-ratio: 1280 / 822; overflow: hidden; border-radius: 3.5% / 5.5%; }
+.spenda-card-face .card-art-white { position: absolute; left: 50%; top: 50%; width: 84.84375%; height: 176.15572%; max-width: none; transform: translate(-50%, -50%) rotate(90deg); }
+.spenda-card-face .card-art-black { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: inherit; }
+.cards-app-screen { position: absolute; inset: 0; background: #fff; visibility: hidden; padding-top: 23%; }
+.cards-app-header { padding: 0 8%; font-size: clamp(19px, 1.6vw, 28px); font-weight: 700; letter-spacing: -0.045em; }
+.cards-screen-card { width: 84%; margin: 9% auto 0; }
+.virtual-card-showcase { position: absolute; inset: 0; bottom: auto; height: 100svh; pointer-events: none; z-index: 4; color: #fff; perspective: 1100px; }
+.card-introduction { position: absolute; top: clamp(85px, 9.4vw, 186px); left: 0; width: 100%; padding: 0 22px; color: #050505; text-align: center; }
+.card-intro-heading { margin: 0; font-size: clamp(32px, 3.3vw, 66px); font-weight: 700; line-height: 1.15; letter-spacing: -0.055em; }
+.card-introduction p { color: #5a5759; margin: 24px auto 0; font-size: clamp(16px, 1.15vw, 23px); line-height: 1.5; letter-spacing: -0.035em; }
+.card-word { display: inline-block; margin-right: 0.22em; transform-origin: left bottom; }
+.card-word:last-child { margin-right: 0; }
+.card-showcase-heading { position: absolute; left: 8.2%; top: 30%; width: 23%; }
+.card-product-label { display: inline-block; border-radius: 30px; padding: 8px 14px; margin: 0 0 16px; background: #303231; font-size: 14px; line-height: 1.2; }
+.card-showcase-description { margin: 18px 0 0; max-width: 320px; font-size: clamp(14px, 1.1vw, 17px); line-height: 1.55; letter-spacing: -0.025em; color: #ddd; }
+.card-showcase-heading h2 { margin: 0; font-size: clamp(30px, 3.3vw, 52px); line-height: 1.18; font-weight: 700; letter-spacing: -0.055em; }
+.card-shared { position: absolute; left: 0; top: 0; width: min(28vw, 420px); transform-origin: center; }
+.virtual-card-showcase .card-use-cases { position: absolute; inset: 0; }
+.card-use-case { position: absolute; width: 23%; overflow-wrap: anywhere; }
+.virtual-card-showcase .card-use-case-content { width: 100%; }
+.card-use-case h3 { margin: 0 0 16px; font-size: clamp(28px, 3.3vw, 50px); line-height: 1.2; letter-spacing: -0.055em; font-weight: 600; text-wrap: balance; }
+.card-use-case h3 span { display: block; }
+.card-use-case p { margin: 0; font-size: clamp(13px, 1.1vw, 17px); line-height: 1.55; letter-spacing: -0.025em; color: #ddd; }
+.card-use-case-shopping { left: 67%; top: 22%; }
+.card-use-case-subscriptions { left: 8.2%; top: 36%; }
+.card-use-case-tools { left: 24.5%; top: 73%; width: 20%; }
+.card-use-case-advertising { left: 66.2%; top: 73%; }
+@media (prefers-reduced-motion: no-preference) {
+  .phone-dashboard { min-height: 100svh; }
+  .card-introduction, .card-showcase-heading, .card-use-case-content, .card-shared { opacity: 0; visibility: hidden; }
+  .card-shared .card-art-white { opacity: 0; }
+}
+@media (max-width: 1000px) and (min-width: 601px) {
+  .card-use-case h3 { font-size: 28px; }
+  .card-use-case p { font-size: 13px; }
+  .card-use-case-subscriptions { left: 5%; width: 25%; }
+  .card-use-case-shopping { left: 70%; width: 26%; }
+  .card-use-case-tools { left: 15%; width: 29%; }
+  .card-use-case-advertising { left: 62%; width: 32%; }
+}
+@media (max-width: 600px) {
+  .card-introduction { top: 76px; }
+  .card-intro-heading { font-size: clamp(29px, 7.7vw, 42px); }
+  .card-introduction p { max-width: 320px; margin-top: 18px; font-size: 16px; }
+  .card-showcase-heading { top: 5%; left: 7%; width: 86%; }
+  .card-showcase-heading h2 { max-width: 300px; font-size: clamp(30px, 8vw, 40px); }
+  .card-product-label { font-size: 12px; padding: 6px 10px; margin-bottom: 12px; }
+  .card-showcase-description { max-width: 280px; margin-top: 12px; font-size: 13px; }
+  .virtual-card-showcase .card-use-cases { top: max(52%, calc(var(--site-nav-height, 0px) + 220px)); bottom: 20px; left: 7%; right: 7%; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 22px; align-content: start; }
+  .virtual-card-showcase .card-use-case { position: relative; inset: auto; width: auto; min-width: 0; }
+  .card-use-case h3 { font-size: clamp(20px, 5.5vw, 27px); margin-bottom: 10px; }
+  .card-use-case p { font-size: 12px; line-height: 1.45; }
+  .card-use-case-shopping { top: 65%; left: 7%; }
+  .card-use-case-subscriptions { top: 65%; left: 54%; }
+  .card-use-case-tools { top: 83%; left: 7%; width: 41%; }
+  .card-use-case-advertising { top: 83%; left: 54%; }
+}
+@media (max-height: 720px) and (min-width: 601px) {
+  .virtual-card-showcase .card-use-case h3 { font-size: clamp(22px, 2.8vw, 34px); margin-bottom: 8px; }
+  .virtual-card-showcase .card-use-case p { font-size: 12px; line-height: 1.4; }
+  .virtual-card-showcase .card-use-case-tools, .virtual-card-showcase .card-use-case-advertising { top: 70%; }
+}
+@media (max-height: 650px) and (max-width: 600px) {
+  .virtual-card-showcase .card-use-cases { top: max(48%, calc(var(--site-nav-height, 0px) + 180px)); gap: 14px 18px; }
+  .virtual-card-showcase .card-use-case h3 { font-size: 18px; margin-bottom: 8px; }
+  .virtual-card-showcase .card-use-case p { font-size: 11px; line-height: 1.4; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cards-app-screen { display: none; }
+  .virtual-card-showcase { position: relative; height: auto; padding: 0 7% 70px; background: #000100; }
+  .card-introduction { position: relative; top: auto; left: auto; width: auto; margin: 0 -8.14% 60px; padding: 30px 22px 60px; background: #fff; }
+  .card-showcase-heading { position: relative; top: auto; left: auto; width: 100%; margin-bottom: 45px; }
+  .card-shared { position: relative; width: min(80%, 420px); margin: 0 auto 55px; }
+  .virtual-card-showcase .card-use-cases { position: relative; inset: auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 38px 24px; }
+  .virtual-card-showcase .card-use-case { position: relative; top: auto; left: auto; width: auto; }
+  .card-use-case p { display: block; }
+  .card-shared .card-art-black { display: none; }
+  .card-shared .card-art-white { opacity: 1; }
+  .card-introduction, .card-showcase-heading, .card-use-case-content, .card-shared, .card-word { opacity: 1 !important; visibility: visible !important; transform: none !important; }
+  .card-shared { width: min(80%, 420px) !important; }
+}

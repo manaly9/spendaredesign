@@ -1,0 +1,11 @@
+/* Add licensed Satoshi files to public/fonts/satoshi/, then uncomment.
+   Until then the site uses Avenir Next / Segoe UI / Arial without a failed request.
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-Variable.woff2') format('woff2');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+*/

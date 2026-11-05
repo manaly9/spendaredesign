@@ -1,0 +1,250 @@
+[
+    {
+        "Path":  "bank_icons\\bank_icons (1).png",
+        "SHA256":  "6AB8BB0E7754B0F1EDF822809BC59D372B8DD1A713DACA788882E22C09A53D45"
+    },
+    {
+        "Path":  "bank_icons\\bank_icons (10).png",
+        "SHA256":  "2D7F8228882BE57A0F20D0E1BDED02120116FA85DF988BA48E6EC77EAD812865"
+    },
+    {
+        "Path":  "bank_icons\\bank_icons (2).png",
+        "SHA256":  "DFA9E04FE57D972D93A50F7D4C3870797804B074AF17D3563693F988AE560162"
+    },
+    {
+        "Path":  "bank_icons\\bank_icons (3).png",
+        "SHA256":  "BD9B77BE8101B48097C5CBA8539DA13CF5088090A9535275917ABB11D8BC90D4"
+    },
+    {
+        "Path":  "bank_icons\\bank_icons (4).png",
+        "SHA256":  "10F294FF696C68B545FFCF18CA0B3AD74493F569FD947FECE2E1787CCBC54987"
+    },
+    {
+        "Path":  "bank_icons\\bank_icons (5).png",
+        "SHA256":  "EBD1E22FA3E5283D18CEEEE62C2AC94C8FCC8F9B9B42987DBE606DF0BE52DC56"
+    },
+    {
+        "Path":  "bank_icons\\bank_icons (6).png",
+        "SHA256":  "C2265762CC19000BA483AAADFCDE217561C4AF09AAB57B809EF5F91947782C76"
+    },
+    {
+        "Path":  "bank_icons\\bank_icons (7).png",
+        "SHA256":  "FA38BBA82BCEE2599BAC29D2D9E084063F929913E1DF7583C040F8FCC1E9F1BC"
+    },
+    {
+        "Path":  "bank_icons\\bank_icons (8).png",
+        "SHA256":  "63C81CEAF2B75D64F975362DAFDF0DC457AA189E090415DC1590029884175204"
+    },
+    {
+        "Path":  "bank_icons\\bank_icons (9).png",
+        "SHA256":  "9A0DA08F909A930BC90C7F52201CC52D41DE6809BA1E851E9464AD6B45F4CE23"
+    },
+    {
+        "Path":  "list_reference\\list_1.png",
+        "SHA256":  "83B84E8F971E1379911449DC3F91546144DE9427C535D0B67688FF7A394F2B6D"
+    },
+    {
+        "Path":  "list_reference\\list_2.png",
+        "SHA256":  "CCB87AB74DBEDAA8F73D6BC1B7F5E8449457DE2AB642B0AA68D76068BD196E4A"
+    },
+    {
+        "Path":  "list_reference\\list_3.png",
+        "SHA256":  "E61F142A328AB7A654C4C06CDC31CD64C768BE7CF9CBB72F1B95F081F7C914C3"
+    },
+    {
+        "Path":  "list_reference\\list_4.png",
+        "SHA256":  "8D20F69A72D3692E89ABD932F8BC26C750FF63EA3166E2EEFEFAEADC46F787C5"
+    },
+    {
+        "Path":  "other_icons\\airtime_icons (1).png",
+        "SHA256":  "D2178B6566F580FA3377D1E69ED1949FCA77B1204B6500A2D425C2D52DBD4668"
+    },
+    {
+        "Path":  "other_icons\\airtime_icons (2).png",
+        "SHA256":  "E4ECBA582978E0123068C1BCC0E925883C9544FC48D9D77B978DB797E4C6890E"
+    },
+    {
+        "Path":  "other_icons\\airtime_icons (3).png",
+        "SHA256":  "7F6C4B7698ECD5EF41BEE91B73C5971B99FECA6376CE5F738D2A7EBD8FB2C3C4"
+    },
+    {
+        "Path":  "other_icons\\crypto_icons (1).png",
+        "SHA256":  "8ED3B02C6F4FAC99CC6C50859F0C8784BF3825C27AA21CBA8CB4ACF9765D47C2"
+    },
+    {
+        "Path":  "other_icons\\crypto_icons (2).png",
+        "SHA256":  "E12603645147A0B54DF271D39E63C47E9A7F33A2958B2BE2AA9F41F1EB0BB3D4"
+    },
+    {
+        "Path":  "other_icons\\crypto_icons (3).png",
+        "SHA256":  "2A742F4CDB42F2D7C0E8D8FF40BC9CEC2C5F586C023711317A21E0D1AF3A2BF3"
+    },
+    {
+        "Path":  "other_icons\\crypto_icons (4).png",
+        "SHA256":  "AB425BDDC9897A025296B6AB91FEDA7EFA45B91490E0B96B937AEAE9AD05CB86"
+    },
+    {
+        "Path":  "other_icons\\crypto_icons (5).png",
+        "SHA256":  "B48E694B497ECC16B761E7902FB8F89FD1860D8BD44458F0AB1550B0892515A9"
+    },
+    {
+        "Path":  "other_icons\\crypto_icons (6).png",
+        "SHA256":  "8E71EB7CACF138538A7E75191C17E37750E5D7BC031ECE661DE0E08AF6FE212F"
+    },
+    {
+        "Path":  "other_icons\\dstv.png",
+        "SHA256":  "4676CE2E52E5BBFF8FFF169EF4ADA2E5E8A110D35A0EFCED7A66B8B2719F9632"
+    },
+    {
+        "Path":  "other_icons\\k2.png",
+        "SHA256":  "4E967488051066B31DF3F88028135555A0AFBAD38C585FBAA97C305A1F202CC7"
+    },
+    {
+        "Path":  "other_icons\\netflix.png",
+        "SHA256":  "F0CD591E96B14F923C0833B08F442F5A96A8049F04EA1FFCC1BE7D7C84348077"
+    },
+    {
+        "Path":  "other_icons\\spotify.png",
+        "SHA256":  "04B7D08B1826612C8EB3AA1F4CA4991203EA7A6E7C3A3BA7A273B962591E8B82"
+    },
+    {
+        "Path":  "other_icons\\x.png",
+        "SHA256":  "925BB59D215C1AB70C3279A5C97B8DFB894F448FA3A01004263D0761B6FAB25D"
+    },
+    {
+        "Path":  "other_images\\app_store (1).png",
+        "SHA256":  "603CDCE28BEF31DB973D0234DF15E4D181AD85EB412B4D9433F408FE8A5A9BCF"
+    },
+    {
+        "Path":  "other_images\\phone_frame.png",
+        "SHA256":  "74665091373B9CF3F6A312CAC721C81330D388370A75FC515E30931C7C1E1613"
+    },
+    {
+        "Path":  "other_images\\phone_popups (1).png",
+        "SHA256":  "F92075E9F9F704283C40F294EE490CFE43D1C35921EFFEB309FFA02E8C2407F3"
+    },
+    {
+        "Path":  "other_images\\phone_popups (2).png",
+        "SHA256":  "3D778E953BCC66258BC928EEA9D1243D8DB7B4878D5745BE1F43AD52C7DD84A1"
+    },
+    {
+        "Path":  "other_images\\phone_popups (3).png",
+        "SHA256":  "94655C4B09717312D09CC282A93F431E20C7FB801F7A9DF1489A0D2FD8612209"
+    },
+    {
+        "Path":  "other_images\\play_store (2).png",
+        "SHA256":  "3099E07626F7D28F027B53D16E024323846554D2ACCB5FA0CBCB03191054307C"
+    },
+    {
+        "Path":  "other_images\\Visa_white_Card.png",
+        "SHA256":  "4979B2D5CBAA53B5D9B70D2F5F8C00871F9D96558C28C45CAC69C6B98FF6B6E1"
+    },
+    {
+        "Path":  "phone_section_video\\spenda_bank_transfer_walkthrough.mp4",
+        "SHA256":  "1341B8997D3590F86D168B0A7416014A9CC3CB223B3F779CFC740E5D0556FBAC"
+    },
+    {
+        "Path":  "reference_images\\bank_referecne.png",
+        "SHA256":  "F193AD8A1A5B96EA9FE17E944674FE18C92FB5612800A355BF2F516F3F116901"
+    },
+    {
+        "Path":  "reference_images\\card_1_reference.png",
+        "SHA256":  "F03D3176F292D9655C03FD5FDE964766DDEE79806AB0ED06A09AC6C9EB79BD04"
+    },
+    {
+        "Path":  "reference_images\\card_2_reference.png",
+        "SHA256":  "DF2716A0038D24F6DF6C67FCA9410D081389075C59D94B6A0ED18247C8F896A6"
+    },
+    {
+        "Path":  "reference_images\\card_3_reference.png",
+        "SHA256":  "4687F391EA998D530AC84E2120A192A564BA6101C3BFAC984D4D8A4E2E144151"
+    },
+    {
+        "Path":  "reference_images\\card_4_reference.png",
+        "SHA256":  "26F4A4734AD0EB3BCEF71F8060E91CADD6415F81B58803C0075970A7A07B42D3"
+    },
+    {
+        "Path":  "reference_images\\card_5_reference.png",
+        "SHA256":  "16EEF089B23420A1BC29DA887ABB34099E324B6058D7D5D806D1FFCB9D0C3D93"
+    },
+    {
+        "Path":  "reference_images\\card_listing.png",
+        "SHA256":  "0879AD9748EAE5D9D722434A78DC8746A12A8E344BD89934B3EF78D49F4A7E3B"
+    },
+    {
+        "Path":  "reference_images\\CTA_and_footer_reference.png",
+        "SHA256":  "CAD330BD85C1F6BE4D0CEFE95A2BF6486A878BBF59A55FDFF95A214BBCA58855"
+    },
+    {
+        "Path":  "reference_images\\footer_icone_images.png",
+        "SHA256":  "B138B73B8170E70711FA585C32377A7A6A1BE466402AAF6D4055121B9DCC5F3B"
+    },
+    {
+        "Path":  "reference_images\\hero 2.png",
+        "SHA256":  "EA6F60456224AC775A3504CF276D4D17A647EA0C2901856211B00E85103B49EF"
+    },
+    {
+        "Path":  "reference_images\\hero 3.png",
+        "SHA256":  "936032667489450B4736DD091D62B266A8CF5753D134E1BF58B846538DD00CE0"
+    },
+    {
+        "Path":  "reference_images\\hero_1st_refrence.png",
+        "SHA256":  "94F259748F562158FE905BE07D42A6B4C0B972F99129019FE325870E914D3C79"
+    },
+    {
+        "Path":  "reference_images\\Phone_dashboard.png",
+        "SHA256":  "6487B277163B6F8F863432ECF7C03B39033E0A618B5FDC79B8A14AFB3A76BE06"
+    },
+    {
+        "Path":  "reference_images\\security 2.png",
+        "SHA256":  "F45267E57C5F80FB4423ED415BF4E001B79B79F9E3CCC0A646B173622A17DF2B"
+    },
+    {
+        "Path":  "reference_images\\security_3.png",
+        "SHA256":  "3A14262FC5446735065471FD17B8617F3F164D2A8FDF1C7DC556189340DFCE5A"
+    },
+    {
+        "Path":  "reference_images\\security_reference.png",
+        "SHA256":  "57E869D3AFDAB71B9899F1D746A8D044DEBAB5C20B6D4EC1F287D985AF7D4AEF"
+    },
+    {
+        "Path":  "reference_images\\testimonial_reference.png",
+        "SHA256":  "4F242BDD6D5E28F5F6169F5D49334A780B1D115928B2D92F9547426CE5F02FDA"
+    },
+    {
+        "Path":  "reference_images\\website planout.png",
+        "SHA256":  "994D7A8CB8BC2519708696CFEB175F0C23857DC70432481ECEF12F1D00C1E072"
+    },
+    {
+        "Path":  "videos\\24_7_support.mp4",
+        "SHA256":  "9EB3B27F124D9D15F52B05C789DE6237379021B2924536857A6D2744B2A6D0C5"
+    },
+    {
+        "Path":  "videos\\airtime_purchase_video.mp4",
+        "SHA256":  "02BEF2C2087294AEF3AFE9F216F51D3DB6E147D752A52083E335D862BAC44A84"
+    },
+    {
+        "Path":  "videos\\footer_tokens_new.mp4",
+        "SHA256":  "5B5C28B01B41959248E10E3B400C9CF1BA6C2360A953DFFD2F07384668A6FD20"
+    },
+    {
+        "Path":  "videos\\pay_subscription_video.mp4",
+        "SHA256":  "2C7FF1909761C87D2DBEE44A9B967927765CCDA90BADEA5DFA49D34EB70B7196"
+    },
+    {
+        "Path":  "videos\\security.mp4",
+        "SHA256":  "F4864C406CE3E848A0CE9646A07674E2CC0B17106C14AAEB5AF8DFD82E3D498B"
+    },
+    {
+        "Path":  "videos\\Spenda_card_product_animation.mp4",
+        "SHA256":  "87979B5A6D0C392389FB641A5C32685493C7E0B97E61A0E8C0BA5B0AAB004DFD"
+    },
+    {
+        "Path":  "videos\\spenda_electricity_payment_animation (4).mp4",
+        "SHA256":  "388FDAA6DD701D4E98D6AC933BA9023394AB57C1F819690EADE47C813D000F6B"
+    },
+    {
+        "Path":  "videos\\user_friendly_interface.mp4",
+        "SHA256":  "57CC0BB64854FC0670DEB9235CCD115946CDF1C6A2CA3CCFD4C2E51B0BD85A17"
+    }
+]

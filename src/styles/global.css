@@ -1,0 +1,25 @@
+@import './fonts.css';
+
+:root {
+  font-family: 'Satoshi', 'Avenir Next', 'Segoe UI', Arial, sans-serif;
+  color: #fff;
+  background: #080b0d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+/* Independent translation leaves scene transforms and pin measurements intact. */
+.bank-copy, .essentials-position {
+  translate: 0 var(--section-rebound, 0px);
+}
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+a { color: inherit; }
+button, a { touch-action: manipulation; }
+:focus-visible { outline: 2px solid #bca2ff; outline-offset: 6px; }
+::selection { background: #baa1ff; color: #080b0d; }
+

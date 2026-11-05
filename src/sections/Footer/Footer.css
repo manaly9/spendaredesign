@@ -1,0 +1,36 @@
+.site-closing { background: #fff; color: #080808; font-family: 'Satoshi', 'Avenir Next', 'Segoe UI', Arial, sans-serif; }
+.download-cta { text-align: center; padding: clamp(45px, 5vw, 90px) 5% clamp(70px, 8vw, 140px); }
+.footer-token { display: block; width: clamp(110px, 12vw, 190px); aspect-ratio: 1; object-fit: contain; margin: 0 auto 8px; }
+.download-cta h2 { margin: 0; font-size: clamp(30px, 3.3vw, 60px); line-height: 1.15; letter-spacing: -.035em; }
+.download-cta > p { margin: 24px auto 34px; font-size: clamp(16px, 1.4vw, 24px); line-height: 1.5; }
+.footer-badges { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; }
+.footer-badges img { display: block; width: clamp(150px, 11.6vw, 200px); height: auto; }
+.download-cta .footer-pending { font-size: 12px; color: #888; margin: 12px 0 0; }
+.footer-columns { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: clamp(24px, 3.2vw, 60px); margin: 0 3.2%; padding: 0 0 50px; }
+.footer-download { border-right: 1px solid #e6e6e6; padding-right: 28px; }
+.footer-download > p { margin: 0 0 20px; font-size: 16px; }
+.footer-download .footer-badges { justify-content: flex-start; gap: 14px; }
+.site-footer h3 { font-size: clamp(18px, 1.4vw, 24px); margin: 0 0 23px; letter-spacing: -.025em; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
+.site-footer li, .footer-contact > a { font-size: clamp(14px, 1vw, 17px); color: #808080; line-height: 1.4; }
+.site-footer a { text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.footer-social { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.footer-social img { display: block; width: 40px; height: 40px; object-fit: contain; }
+.site-footer address { border-top: 1px solid #e5e5e5; margin: 0 3.2%; padding: 28px 0; font-size: 14px; font-style: normal; }
+.footer-artwork { position: relative; min-height: clamp(150px, 15vw, 270px); margin-top: 65px; background-position: center bottom; background-size: auto 100%; background-repeat: no-repeat; display: grid; place-items: center; }
+.footer-artwork small { position: relative; background: #fff; padding: 16px 22px; font-size: 13px; }
+@media (max-width: 1000px) { .footer-columns { grid-template-columns: 1fr 1fr; gap: 40px; margin: 0 6%; } .footer-download { border: 0; padding: 0; } .site-footer address { margin: 0 6%; } }
+@media (max-width: 550px) {
+  .download-cta { padding: 40px 6% 65px; }
+  .download-cta > p { margin: 20px 0 28px; }
+  .footer-badges { gap: 10px; }
+  .footer-badges img { width: 145px; }
+  .footer-columns { gap: 34px 20px; }
+  .footer-download, .footer-contact { grid-column: 1 / -1; }
+  .footer-artwork { margin-top: 25px; }
+}
+.footer-brand { display: flex; flex-direction: column; align-items: flex-start; gap: 28px; }
+.footer-spenda-logo { display: block; width: clamp(180px, 22vw, 350px); max-width: 100%; height: auto; overflow: hidden; }
+.footer-ndpc-logo { display: block; width: clamp(70px, 7.2vw, 110px); max-width: 100%; height: auto; overflow: hidden; }
+@media (max-width: 1000px) { .footer-brand { gap: 24px; } }

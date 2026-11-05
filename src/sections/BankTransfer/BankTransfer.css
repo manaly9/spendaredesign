@@ -1,0 +1,31 @@
+.bank-transfer { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; min-height: clamp(740px, 56.9vw, 1165px); padding: clamp(90px, 8.6vw, 176px) 0 clamp(44px, 4.8vw, 98px); background: #fff; color: #050505; }
+.bank-copy { position: relative; z-index: 10; text-align: center; padding: 0 22px; }
+.bank-copy h2 { margin: 0; font-size: clamp(38px, 4.45vw, 64px); line-height: 1.15; font-weight: 700; letter-spacing: -0.055em; }
+.bank-word { display: inline-block; margin-right: 0.22em; transform-origin: left bottom; }
+.bank-word:last-child { margin-right: 0; }
+.bank-description { width: 100%; max-width: 570px; margin: 24px auto 0; color: #5a5759; font-size: clamp(16px, 1.4vw, 20px); line-height: 1.6; letter-spacing: -0.035em; text-wrap: pretty; }
+.bank-pile { position: relative; width: min(100%, 2048px); height: clamp(350px, 29.3vw, 600px); flex-shrink: 0; margin: clamp(50px, 5.5vw, 112px) auto 0; }
+.bank-tile-slot { position: absolute; width: var(--tile-size); left: var(--tile-x); bottom: var(--tile-bottom); aspect-ratio: 1; transform: translateX(-50%); z-index: var(--tile-z); pointer-events: none; }
+.bank-tile-fall { position: absolute; inset: 0; transform-origin: 50% 86%; }
+.bank-tile-physics { position: absolute; inset: 0; transform-origin: 50% 50%; }
+.bank-pile { overflow: clip; }
+.bank-controls { position: absolute; z-index: 12; left: 50%; bottom: 16px; transform: translateX(-50%); width: calc(100% - 32px); display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 20px; }
+.bank-controls button { padding: 5px 0; background: transparent; border: 0; color: #747174; font-size: 12px; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
+.bank-controls button:disabled { color: #aaa; cursor: default; }
+.bank-tilt-status { width: 100%; min-height: 14px; text-align: center; color: #747174; font-size: 11px; }
+.bank-transfer[data-settled='false'] .bank-controls { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .bank-controls { display: none; } }
+.bank-tile { position: absolute; inset: 12%; width: 76%; height: 76%; padding: 0; border: 0; border-radius: 22%; background: transparent; color: inherit; cursor: pointer; pointer-events: auto; transform-origin: 50% 88%; touch-action: manipulation; }
+.bank-tile:disabled { cursor: default; pointer-events: none; }
+.bank-tile img { position: absolute; left: 50%; top: 50%; width: 131.578947%; height: auto; max-width: none; transform: translate(-50%, -50%) rotate(var(--tile-angle)); pointer-events: none; user-select: none; }
+@media (max-width: 1000px) and (min-width: 601px) {
+  .bank-pile { height: 360px; }
+  .bank-tile-slot { width: calc(var(--tile-size) * 0.97); }
+}
+@media (max-width: 600px) {
+  .bank-transfer { min-height: 760px; padding-top: 80px; padding-bottom: 28px; }
+  .bank-copy h2 { max-width: 350px; margin: 0 auto; font-size: clamp(34px, 8.8vw, 46px); }
+  .bank-description { max-width: 340px; margin-top: 20px; font-size: 16px; }
+  .bank-pile { width: 100%; height: clamp(350px, 106vw, 500px); margin-top: 70px; }
+  .bank-tile-slot { left: var(--mobile-x); bottom: var(--mobile-bottom); width: 46%; }
+}
