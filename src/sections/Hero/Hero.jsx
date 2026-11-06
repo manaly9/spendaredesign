@@ -1,11 +1,10 @@
 ﻿import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useHeroTimeline } from './useHeroTimeline.js'
 import './Hero.css'
 import MobileNavigation from './MobileNavigation.jsx'
 
-gsap.registerPlugin(ScrollTrigger)
+import forwardVideo from '../../../videos/Spenda_card_product_animation_forward.mp4'
+import reverseVideo from '../../../videos/Spenda_card_product_animation - reverse.mp4'
 
 const states = [
   {
@@ -55,9 +54,10 @@ function Brand() {
 export default function Hero() {
   const root = useRef(null)
   const video = useRef(null)
+  const reverse = useRef(null)
   const dialog = useRef(null)
   const products = useRef(null)
-  useHeroTimeline(root, video)
+  useHeroTimeline(root, video, reverse)
 
   useEffect(() => {
     const closeOutside = (event) => {
@@ -76,13 +76,8 @@ export default function Hero() {
 
   function goToState(index) {
     products.current.open = false
-    const trigger = ScrollTrigger.getById('spenda-hero')
-    if (trigger) {
-      const progress = [0, 0.36, 0.65][index]
-      window.scrollTo({ top: trigger.start + (trigger.end - trigger.start) * progress, behavior: 'smooth' })
-    } else {
-      root.current.querySelectorAll('.hero-copy')[index].scrollIntoView({ behavior: 'instant', block: 'center' })
-    }
+    root.current.dispatchEvent(new CustomEvent('hero:select', { detail: index }))
+    root.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   return (
@@ -93,7 +88,11 @@ export default function Hero() {
             <video ref={video} className="hero-video" muted playsInline preload="auto"
               poster="/media/hero/spenda-card-poster.jpg" disablePictureInPicture
               tabIndex={-1}>
-              <source src="/media/hero/spenda-card-scrub.mp4" type="video/mp4" />
+              <source src={forwardVideo} type="video/mp4" />
+            </video>
+            <video ref={reverse} className="hero-video" muted playsInline preload="auto"
+              style={{ opacity: 0 }} disablePictureInPicture tabIndex={-1}>
+              <source src={reverseVideo} type="video/mp4" />
             </video>
           </div>
           <div className="hero-shade" aria-hidden="true" />
