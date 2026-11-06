@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Spenda
 
 Local React + Vite website using CSS, GSAP, and its bundled ScrollTrigger plugin.
@@ -158,3 +159,6 @@ official MIT-licensed release build. Registry access is blocked in this environm
 so the source build, upstream package metadata, license and provenance are retained
 in `vendor/matter-js/`. The lockfile resolves the local package without registry access.
 
+=======
+# spendaredesign
+>>>>>>> 6529abe287c359278ba3268ae13ab9c9296e7de9
