@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react'
 import token from '../../../videos/footer_tokens_new.mp4'
 import artwork from '../../../reference_images/footer_icone_images.png'
-import footerReference from '../../../reference_images/footer_correct_refrence.png'
+import spendaLogo from '../../../other_images/Spenda_Geometric_Black_Logo.png'
+import ndpcLogo from '../../../other_images/NDPC_Nigeria_Data_Protection_Commission Logo.png'
 import { FOOTER_LINKS } from './footerAssets.js'
 import './Footer.css'
 
@@ -52,12 +53,8 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-columns">
         <div className="footer-download footer-brand">
-          <svg className="footer-spenda-logo" viewBox="20 48 135 40" role="img" aria-label="Spenda">
-            <image href={footerReference} width="592" height="296" />
-          </svg>
-          <svg className="footer-ndpc-logo" viewBox="22 110 48 19" role="img" aria-label="Nigeria Data Protection Commission">
-            <image href={footerReference} width="592" height="296" />
-          </svg>
+          <img className="footer-spenda-logo" src={spendaLogo} alt="Spenda" />
+          <img className="footer-ndpc-logo" src={ndpcLogo} alt="Nigeria Data Protection Commission" />
         </div>
         <nav aria-label="Footer products"><h3>Product</h3><ul>
           {['Crypto deposit', 'Naira deposit', 'Stablecoin transfer'].map(label => <li key={label}><span aria-disabled="true" title="Link coming soon">{label}</span></li>)}
