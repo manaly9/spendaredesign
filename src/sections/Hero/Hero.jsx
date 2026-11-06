@@ -1,10 +1,10 @@
-﻿import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { useHeroTimeline } from './useHeroTimeline.js'
 import './Hero.css'
 import MobileNavigation from './MobileNavigation.jsx'
 
-import forwardVideo from '../../../videos/Spenda_card_product_animation_forward.mp4'
-import reverseVideo from '../../../videos/Spenda_card_product_animation - reverse.mp4'
+import forwardVideo from '../../../videos/Spenda_card_product_animation_forward_single_chip.mp4'
+import reverseVideo from '../../../videos/Spenda_card_product_animation_reverse_single_chip.mp4'
 
 const states = [
   {
