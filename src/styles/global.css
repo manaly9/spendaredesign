@@ -12,10 +12,7 @@
 
 * { box-sizing: border-box; }
 body { margin: 0; }
-/* Independent translation leaves scene transforms and pin measurements intact. */
-.bank-copy, .essentials-position {
-  translate: 0 var(--section-rebound, 0px);
-}
+.section-transition { clip-path: inset(0px); background: #fff; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; }
 a { color: inherit; }

@@ -4,40 +4,34 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-// The hero/phone/card handoff already has a coordinated entrance timeline.
-// Only independent boundary layers receive this additive settling offset.
+// Clip dedicated boundary wrappers without transforming their contents.
 export function useSectionRebound() {
   useLayoutEffect(() => {
     const media = gsap.matchMedia()
     media.add('(prefers-reduced-motion: no-preference)', () => {
       const cleanups = []
-      for (const [selector, layer] of [
-        ['.bank-transfer', '.bank-copy'],
-        ['.essentials', '.essentials-position'],
-      ]) {
-        const section = document.querySelector(selector)
-        const target = section?.querySelector(layer)
-        if (!target) continue
+      for (const target of document.querySelectorAll('[data-transition]')) {
+        const selector = target.dataset.transition
         let tween
         let lastPlay = -Infinity
-        const rebound = direction => {
+        const rebound = () => {
           if (ScrollTrigger.isRefreshing || performance.now() - lastPlay < 650) return
           lastPlay = performance.now()
           tween?.kill()
-          const distance = window.innerWidth < 768 ? 8 : 12
+          const distance = window.innerWidth < 768 ? 7 : 12
           tween = gsap.timeline()
-            .to(target, { '--section-rebound': `${direction * distance}px`, duration: 0.12, ease: 'sine.out' })
-            .to(target, { '--section-rebound': '0px', duration: 0.4, ease: 'back.out(1.05)' })
+            .to(target, { clipPath: `inset(${distance}px)`, duration: 0.12, ease: 'power2.out' })
+            .to(target, { clipPath: 'inset(0px)', duration: 0.43, ease: 'back.out(1.15)' })
         }
         const trigger = ScrollTrigger.create({
-          id: `spenda-boundary-${selector.slice(1)}`, trigger: section,
+          id: `spenda-boundary-${selector}`, trigger: target,
           start: 'top 80%', end: 'top 20%',
-          onEnter: () => rebound(1), onEnterBack: () => rebound(-1),
+          onEnter: rebound, onEnterBack: rebound,
         })
         cleanups.push(() => {
           trigger.kill()
           tween?.kill()
-          target.style.removeProperty('--section-rebound')
+          target.style.removeProperty('clip-path')
         })
       }
       return () => cleanups.forEach(cleanup => cleanup())

@@ -9,7 +9,7 @@ import { useSectionRebound } from './useSectionRebound.js'
 
 export default function App() {
   useSectionRebound()
-  return <main id="main"><Hero /><PhoneDashboard /><BankTransfer /><Essentials /><Experience /><Testimonials /><Footer /></main>
+  return <main id="main"><Hero /><PhoneDashboard /><div className="section-transition" data-transition="bank-transfer"><BankTransfer /></div><Essentials /><Experience /><div className="section-transition" data-transition="testimonials"><Testimonials /></div><Footer /></main>
 }
 
 

@@ -86,19 +86,19 @@ export default function PhoneDashboard({ demos = PHONE_DEMOS }) {
       const moving = context.conditions.motion
       const entrance = moving ? gsap.timeline({ paused: true })
         .from(section.querySelectorAll('.phone-word'), {
-          yPercent: 85, opacity: 0, rotation: 3, duration: 0.46, stagger: 0.065, ease: 'power3.out',
+          yPercent: 85, opacity: 0, rotation: 3, duration: 0.46, stagger: 0.065, ease: 'power2.out',
         })
         .from('.phone-description', { y: 14, opacity: 0, duration: 0.38 }, 0.23)
-        .from('.phone-device', { y: 95, opacity: 0, duration: 1.1, ease: 'power3.out' }, 0.45) : null
+        .from('.phone-device', { y: 95, opacity: 0, duration: 1.1, ease: 'power2.out' }, 0.45) : null
 
-      // Occupy the hero's trailing white viewport, but stay hidden until its
-      // flash has completed. Internal composition and entrance easing stay intact.
-      if (moving) gsap.set(section, { autoAlpha: 0 })
+      // The white section stays in normal flow. Its edge moves one-to-one
+      // with scrolling, while the existing content entrance settles by arrival.
       ScrollTrigger.create({
-        id: 'spenda-phone-entrance', trigger: section, start: moving ? 'top 10%' : 'top 55%',
-        onEnter: () => { gsap.set(section, { autoAlpha: 1 }); entrance?.play() },
-        onEnterBack: () => gsap.set(section, { autoAlpha: 1 }),
-        onLeaveBack: () => { if (moving) gsap.set(section, { autoAlpha: 0 }) },
+        id: 'spenda-phone-entrance', trigger: section,
+        start: 'top bottom', end: 'top top',
+        animation: entrance || undefined,
+        scrub: moving ? 0.2 : false,
+        invalidateOnRefresh: true,
       })
       // Playback changes only at the demonstration boundaries, never on timeline updates.
       // The exit boundary can become the next scene's start without changing the player.
